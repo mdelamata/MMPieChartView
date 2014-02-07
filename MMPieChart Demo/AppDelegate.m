@@ -27,9 +27,11 @@
     [self configurePieChart];
 }
 
+#pragma mark - Privated Methods
+
 -(void)configurePieChart{
         
-    self.keysArray = @[@"Value 0",@"Value 1",@"Value 2",@"Value 3"];
+    self.keysArray = @[@"Kings Cup",@"iPaganini",@"Solfa",@"aCorn"];
     self.valuesArray = @[@10,@30,@50,@20];
     self.colorsArray = @[[NSColor redColor],
                          [NSColor orangeColor],
@@ -61,13 +63,15 @@
     return [self.keysArray objectAtIndex:index];
 }
 
+
+#pragma mark - IBAction Methods
+
 - (IBAction)showHideLabels:(id)sender {
 
     self.pieChart.showKeys = !self.pieChart.showKeys ;
     [self.pieChart reloadData];
     
 }
-
 - (IBAction)toogleVisualizationType:(id)sender {
     
     if (self.pieChart.visualizationType == MMPieChartViewVisualizationTypePercentage) {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791508BD18A53FA400758F63 /* MMPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 791508BA18A53FA400758F63 /* MMPieChartView.m */; };
+		791508BE18A53FA400758F63 /* NSColor+HSVExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 791508BC18A53FA400758F63 /* NSColor+HSVExtras.m */; };
 		79A256C618A4679F00140C6A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A256C518A4679F00140C6A /* Cocoa.framework */; };
 		79A256D018A4679F00140C6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A256CE18A4679F00140C6A /* InfoPlist.strings */; };
 		79A256D218A4679F00140C6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256D118A4679F00140C6A /* main.m */; };
@@ -18,8 +20,6 @@
 		79A256E618A4679F00140C6A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A256C518A4679F00140C6A /* Cocoa.framework */; };
 		79A256EE18A4679F00140C6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A256EC18A4679F00140C6A /* InfoPlist.strings */; };
 		79A256F018A4679F00140C6A /* MMPieChart_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256EF18A4679F00140C6A /* MMPieChart_DemoTests.m */; };
-		79A256FC18A467FE00140C6A /* MMPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256FB18A467FE00140C6A /* MMPieChartView.m */; };
-		79A256FF18A4FE8100140C6A /* NSColor+HSVExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256FE18A4FE8100140C6A /* NSColor+HSVExtras.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,29 +33,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		79A256C218A4679F00140C6A /* MMPieChart Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMPieChart Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		791508B918A53FA400758F63 /* MMPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMPieChartView.h; path = MMPieChartView/MMPieChartView.h; sourceTree = SOURCE_ROOT; };
+		791508BA18A53FA400758F63 /* MMPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMPieChartView.m; path = MMPieChartView/MMPieChartView.m; sourceTree = SOURCE_ROOT; };
+		791508BB18A53FA400758F63 /* NSColor+HSVExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+HSVExtras.h"; path = "MMPieChartView/NSColor+HSVExtras.h"; sourceTree = SOURCE_ROOT; };
+		791508BC18A53FA400758F63 /* NSColor+HSVExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+HSVExtras.m"; path = "MMPieChartView/NSColor+HSVExtras.m"; sourceTree = SOURCE_ROOT; };
+		79A256C218A4679F00140C6A /* MMPieChartView Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMPieChartView Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A256C518A4679F00140C6A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		79A256C818A4679F00140C6A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		79A256C918A4679F00140C6A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		79A256CA18A4679F00140C6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		79A256CD18A4679F00140C6A /* MMPieChart Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMPieChart Demo-Info.plist"; sourceTree = "<group>"; };
+		79A256CD18A4679F00140C6A /* MMPieChartView Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMPieChartView Demo-Info.plist"; sourceTree = "<group>"; };
 		79A256CF18A4679F00140C6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79A256D118A4679F00140C6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		79A256D318A4679F00140C6A /* MMPieChart Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMPieChart Demo-Prefix.pch"; sourceTree = "<group>"; };
+		79A256D318A4679F00140C6A /* MMPieChartView Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMPieChartView Demo-Prefix.pch"; sourceTree = "<group>"; };
 		79A256D518A4679F00140C6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		79A256D718A4679F00140C6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79A256D818A4679F00140C6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		79A256DB18A4679F00140C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		79A256DD18A4679F00140C6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		79A256E318A4679F00140C6A /* MMPieChart DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MMPieChart DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A256E318A4679F00140C6A /* MMPieChartView DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MMPieChartView DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A256E418A4679F00140C6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		79A256EB18A4679F00140C6A /* MMPieChart DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMPieChart DemoTests-Info.plist"; sourceTree = "<group>"; };
+		79A256EB18A4679F00140C6A /* MMPieChartView DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMPieChartView DemoTests-Info.plist"; sourceTree = "<group>"; };
 		79A256ED18A4679F00140C6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79A256EF18A4679F00140C6A /* MMPieChart_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPieChart_DemoTests.m; sourceTree = "<group>"; };
-		79A256FA18A467FE00140C6A /* MMPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPieChartView.h; sourceTree = "<group>"; };
-		79A256FB18A467FE00140C6A /* MMPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPieChartView.m; sourceTree = "<group>"; };
-		79A256FD18A4FE8100140C6A /* NSColor+HSVExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+HSVExtras.h"; sourceTree = "<group>"; };
-		79A256FE18A4FE8100140C6A /* NSColor+HSVExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+HSVExtras.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +82,9 @@
 		79A256B918A4679F00140C6A = {
 			isa = PBXGroup;
 			children = (
-				79A256CB18A4679F00140C6A /* MMPieChart Demo */,
-				79A256F918A467C900140C6A /* MMPieChart */,
-				79A256E918A4679F00140C6A /* MMPieChart DemoTests */,
+				79A256CB18A4679F00140C6A /* MMPieChartView Demo */,
+				79A256F918A467C900140C6A /* MMPieChartView */,
+				79A256E918A4679F00140C6A /* MMPieChartView DemoTests */,
 				79A256C418A4679F00140C6A /* Frameworks */,
 				79A256C318A4679F00140C6A /* Products */,
 			);
@@ -93,8 +93,8 @@
 		79A256C318A4679F00140C6A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79A256C218A4679F00140C6A /* MMPieChart Demo.app */,
-				79A256E318A4679F00140C6A /* MMPieChart DemoTests.xctest */,
+				79A256C218A4679F00140C6A /* MMPieChartView Demo.app */,
+				79A256E318A4679F00140C6A /* MMPieChartView DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		79A256CB18A4679F00140C6A /* MMPieChart Demo */ = {
+		79A256CB18A4679F00140C6A /* MMPieChartView Demo */ = {
 			isa = PBXGroup;
 			children = (
 				79A256D718A4679F00140C6A /* AppDelegate.h */,
@@ -128,56 +128,59 @@
 				79A256DD18A4679F00140C6A /* Images.xcassets */,
 				79A256CC18A4679F00140C6A /* Supporting Files */,
 			);
+			name = "MMPieChartView Demo";
 			path = "MMPieChart Demo";
 			sourceTree = "<group>";
 		};
 		79A256CC18A4679F00140C6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79A256CD18A4679F00140C6A /* MMPieChart Demo-Info.plist */,
+				79A256CD18A4679F00140C6A /* MMPieChartView Demo-Info.plist */,
 				79A256CE18A4679F00140C6A /* InfoPlist.strings */,
 				79A256D118A4679F00140C6A /* main.m */,
-				79A256D318A4679F00140C6A /* MMPieChart Demo-Prefix.pch */,
+				79A256D318A4679F00140C6A /* MMPieChartView Demo-Prefix.pch */,
 				79A256D418A4679F00140C6A /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		79A256E918A4679F00140C6A /* MMPieChart DemoTests */ = {
+		79A256E918A4679F00140C6A /* MMPieChartView DemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				79A256EF18A4679F00140C6A /* MMPieChart_DemoTests.m */,
 				79A256EA18A4679F00140C6A /* Supporting Files */,
 			);
+			name = "MMPieChartView DemoTests";
 			path = "MMPieChart DemoTests";
 			sourceTree = "<group>";
 		};
 		79A256EA18A4679F00140C6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79A256EB18A4679F00140C6A /* MMPieChart DemoTests-Info.plist */,
+				79A256EB18A4679F00140C6A /* MMPieChartView DemoTests-Info.plist */,
 				79A256EC18A4679F00140C6A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		79A256F918A467C900140C6A /* MMPieChart */ = {
+		79A256F918A467C900140C6A /* MMPieChartView */ = {
 			isa = PBXGroup;
 			children = (
-				79A256FA18A467FE00140C6A /* MMPieChartView.h */,
-				79A256FB18A467FE00140C6A /* MMPieChartView.m */,
-				79A256FD18A4FE8100140C6A /* NSColor+HSVExtras.h */,
-				79A256FE18A4FE8100140C6A /* NSColor+HSVExtras.m */,
+				791508B918A53FA400758F63 /* MMPieChartView.h */,
+				791508BA18A53FA400758F63 /* MMPieChartView.m */,
+				791508BB18A53FA400758F63 /* NSColor+HSVExtras.h */,
+				791508BC18A53FA400758F63 /* NSColor+HSVExtras.m */,
 			);
+			name = MMPieChartView;
 			path = MMPieChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79A256C118A4679F00140C6A /* MMPieChart Demo */ = {
+		79A256C118A4679F00140C6A /* MMPieChartView Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79A256F318A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChart Demo" */;
+			buildConfigurationList = 79A256F318A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChartView Demo" */;
 			buildPhases = (
 				79A256BE18A4679F00140C6A /* Sources */,
 				79A256BF18A4679F00140C6A /* Frameworks */,
@@ -187,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = "MMPieChart Demo";
+			name = "MMPieChartView Demo";
 			productName = "MMPieChart Demo";
-			productReference = 79A256C218A4679F00140C6A /* MMPieChart Demo.app */;
+			productReference = 79A256C218A4679F00140C6A /* MMPieChartView Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		79A256E218A4679F00140C6A /* MMPieChart DemoTests */ = {
+		79A256E218A4679F00140C6A /* MMPieChartView DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79A256F618A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChart DemoTests" */;
+			buildConfigurationList = 79A256F618A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChartView DemoTests" */;
 			buildPhases = (
 				79A256DF18A4679F00140C6A /* Sources */,
 				79A256E018A4679F00140C6A /* Frameworks */,
@@ -205,9 +208,9 @@
 			dependencies = (
 				79A256E818A4679F00140C6A /* PBXTargetDependency */,
 			);
-			name = "MMPieChart DemoTests";
+			name = "MMPieChartView DemoTests";
 			productName = "MMPieChart DemoTests";
-			productReference = 79A256E318A4679F00140C6A /* MMPieChart DemoTests.xctest */;
+			productReference = 79A256E318A4679F00140C6A /* MMPieChartView DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +227,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 79A256BD18A4679F00140C6A /* Build configuration list for PBXProject "MMPieChart Demo" */;
+			buildConfigurationList = 79A256BD18A4679F00140C6A /* Build configuration list for PBXProject "MMPieChartView Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -237,8 +240,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79A256C118A4679F00140C6A /* MMPieChart Demo */,
-				79A256E218A4679F00140C6A /* MMPieChart DemoTests */,
+				79A256C118A4679F00140C6A /* MMPieChartView Demo */,
+				79A256E218A4679F00140C6A /* MMPieChartView DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,9 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A256D918A4679F00140C6A /* AppDelegate.m in Sources */,
-				79A256FF18A4FE8100140C6A /* NSColor+HSVExtras.m in Sources */,
+				791508BE18A53FA400758F63 /* NSColor+HSVExtras.m in Sources */,
+				791508BD18A53FA400758F63 /* MMPieChartView.m in Sources */,
 				79A256D218A4679F00140C6A /* main.m in Sources */,
-				79A256FC18A467FE00140C6A /* MMPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +293,7 @@
 /* Begin PBXTargetDependency section */
 		79A256E818A4679F00140C6A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 79A256C118A4679F00140C6A /* MMPieChart Demo */;
+			target = 79A256C118A4679F00140C6A /* MMPieChartView Demo */;
 			targetProxy = 79A256E718A4679F00140C6A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -405,9 +408,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MMPieChart Demo/MMPieChart Demo-Prefix.pch";
-				INFOPLIST_FILE = "MMPieChart Demo/MMPieChart Demo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MMPieChart Demo/MMPieChartView Demo-Prefix.pch";
+				INFOPLIST_FILE = "MMPieChart Demo/MMPieChartView Demo-Info.plist";
+				PRODUCT_NAME = "MMPieChartView Demo";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,9 +421,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MMPieChart Demo/MMPieChart Demo-Prefix.pch";
-				INFOPLIST_FILE = "MMPieChart Demo/MMPieChart Demo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MMPieChart Demo/MMPieChartView Demo-Prefix.pch";
+				INFOPLIST_FILE = "MMPieChart Demo/MMPieChartView Demo-Info.plist";
+				PRODUCT_NAME = "MMPieChartView Demo";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -440,8 +443,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MMPieChart DemoTests/MMPieChart DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MMPieChart DemoTests/MMPieChartView DemoTests-Info.plist";
+				PRODUCT_NAME = "MMPieChartView DemoTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -458,8 +461,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MMPieChart Demo/MMPieChart Demo-Prefix.pch";
-				INFOPLIST_FILE = "MMPieChart DemoTests/MMPieChart DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MMPieChart DemoTests/MMPieChartView DemoTests-Info.plist";
+				PRODUCT_NAME = "MMPieChartView DemoTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -468,7 +471,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79A256BD18A4679F00140C6A /* Build configuration list for PBXProject "MMPieChart Demo" */ = {
+		79A256BD18A4679F00140C6A /* Build configuration list for PBXProject "MMPieChartView Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79A256F118A4679F00140C6A /* Debug */,
@@ -477,21 +480,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79A256F318A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChart Demo" */ = {
+		79A256F318A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChartView Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79A256F418A4679F00140C6A /* Debug */,
 				79A256F518A4679F00140C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		79A256F618A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChart DemoTests" */ = {
+		79A256F618A4679F00140C6A /* Build configuration list for PBXNativeTarget "MMPieChartView DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79A256F718A4679F00140C6A /* Debug */,
 				79A256F818A4679F00140C6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

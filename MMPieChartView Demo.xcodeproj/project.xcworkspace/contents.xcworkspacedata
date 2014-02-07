@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MMPieChart Demo.xcodeproj">
+      location = "self:MMPieChartView Demo.xcodeproj">
    </FileRef>
 </Workspace>
