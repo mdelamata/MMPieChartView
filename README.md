@@ -3,7 +3,7 @@ MMPieChartView
 
 MMPieChartView is a subclass of NSView to represent
 
-![alt tag](https://raw.github.com/mdelamata/MMDatePicker/master/MMPieChart%20Demo/capture.png)
+![alt tag](https://raw.github.com/mdelamata/MMPieChartView/master/MMPieChart%20Demo/capture.png)
 
 
 How to use it? There's nothing to it! Firstly, import the .h :
