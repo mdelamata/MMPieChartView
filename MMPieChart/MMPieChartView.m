@@ -126,7 +126,7 @@ const int radius = 170;
         NSString *textContent;
         NSString *valueKeyString = self.showKeys?[NSString stringWithFormat:@"%@\n",self.keysArray[i]]:@"";
         
-        if (self.visualizationType == MMPieChartViewVisualizationTypePorcentage) {
+        if (self.visualizationType == MMPieChartViewVisualizationTypePercentage) {
             textContent = [NSString stringWithFormat:@"%@%.01lf%%",valueKeyString,[self.relativeValuesArray[i] floatValue]*100];
         }else if (self.visualizationType == MMPieChartViewVisualizationTypeUnits) {
             textContent = [NSString stringWithFormat:@"%@%@",valueKeyString,self.valuesArray[i]];

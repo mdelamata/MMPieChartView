@@ -10,19 +10,20 @@
 
 typedef enum MMPieChartViewVisualizationType{
     MMPieChartViewVisualizationTypeUnits = 0,
-    MMPieChartViewVisualizationTypePorcentage
+    MMPieChartViewVisualizationTypePercentage
 }MMPieChartViewVisualizationType;
 
 
 @class MMPieChartView;
 
 @protocol MMPieChartViewDataSource <NSObject>
-@optional
--(NSNumber*)pieChartView:(MMPieChartView*)pieChart valueForValueAtIndex:(NSInteger)index;
--(NSColor*)pieChartView:(MMPieChartView*)pieChart colorForValueAtIndex:(NSInteger)index;
 @required
--(NSString*)pieChartView:(MMPieChartView*)pieChart keyForValueAtIndex:(NSInteger)index;
 -(NSInteger)numberOfPiecesForPieChartView:(MMPieChartView*)pieChart;
+-(NSNumber*)pieChartView:(MMPieChartView*)pieChart valueForValueAtIndex:(NSInteger)index;
+@optional
+-(NSColor*)pieChartView:(MMPieChartView*)pieChart colorForValueAtIndex:(NSInteger)index;
+-(NSString*)pieChartView:(MMPieChartView*)pieChart keyForValueAtIndex:(NSInteger)index;
+
 @end
 
 @protocol MMPieChartViewDelegate <NSObject>

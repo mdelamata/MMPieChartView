@@ -70,7 +70,7 @@
 
 - (IBAction)toogleVisualizationType:(id)sender {
     
-    if (self.pieChart.visualizationType == MMPieChartViewVisualizationTypePorcentage) {
+    if (self.pieChart.visualizationType == MMPieChartViewVisualizationTypePercentage) {
         [self.pieChart setVisualizationType:MMPieChartViewVisualizationTypeUnits];
     }else{
         [self.pieChart setVisualizationType:MMPieChartViewVisualizationTypePorcentage];
