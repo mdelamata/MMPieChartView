@@ -73,7 +73,7 @@
     if (self.pieChart.visualizationType == MMPieChartViewVisualizationTypePercentage) {
         [self.pieChart setVisualizationType:MMPieChartViewVisualizationTypeUnits];
     }else{
-        [self.pieChart setVisualizationType:MMPieChartViewVisualizationTypePorcentage];
+        [self.pieChart setVisualizationType:MMPieChartViewVisualizationTypePercentage];
         
     }
     
