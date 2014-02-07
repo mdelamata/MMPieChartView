@@ -18,7 +18,7 @@
 		79A256E618A4679F00140C6A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A256C518A4679F00140C6A /* Cocoa.framework */; };
 		79A256EE18A4679F00140C6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A256EC18A4679F00140C6A /* InfoPlist.strings */; };
 		79A256F018A4679F00140C6A /* MMPieChart_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256EF18A4679F00140C6A /* MMPieChart_DemoTests.m */; };
-		79A256FC18A467FE00140C6A /* MMPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256FB18A467FE00140C6A /* MMPieChart.m */; };
+		79A256FC18A467FE00140C6A /* MMPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256FB18A467FE00140C6A /* MMPieChartView.m */; };
 		79A256FF18A4FE8100140C6A /* NSColor+HSVExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A256FE18A4FE8100140C6A /* NSColor+HSVExtras.m */; };
 /* End PBXBuildFile section */
 
@@ -52,8 +52,8 @@
 		79A256EB18A4679F00140C6A /* MMPieChart DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMPieChart DemoTests-Info.plist"; sourceTree = "<group>"; };
 		79A256ED18A4679F00140C6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79A256EF18A4679F00140C6A /* MMPieChart_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPieChart_DemoTests.m; sourceTree = "<group>"; };
-		79A256FA18A467FE00140C6A /* MMPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPieChart.h; sourceTree = "<group>"; };
-		79A256FB18A467FE00140C6A /* MMPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPieChart.m; sourceTree = "<group>"; };
+		79A256FA18A467FE00140C6A /* MMPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPieChartView.h; sourceTree = "<group>"; };
+		79A256FB18A467FE00140C6A /* MMPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPieChartView.m; sourceTree = "<group>"; };
 		79A256FD18A4FE8100140C6A /* NSColor+HSVExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+HSVExtras.h"; sourceTree = "<group>"; };
 		79A256FE18A4FE8100140C6A /* NSColor+HSVExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+HSVExtras.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,8 +164,8 @@
 		79A256F918A467C900140C6A /* MMPieChart */ = {
 			isa = PBXGroup;
 			children = (
-				79A256FA18A467FE00140C6A /* MMPieChart.h */,
-				79A256FB18A467FE00140C6A /* MMPieChart.m */,
+				79A256FA18A467FE00140C6A /* MMPieChartView.h */,
+				79A256FB18A467FE00140C6A /* MMPieChartView.m */,
 				79A256FD18A4FE8100140C6A /* NSColor+HSVExtras.h */,
 				79A256FE18A4FE8100140C6A /* NSColor+HSVExtras.m */,
 			);
@@ -273,7 +273,7 @@
 				79A256D918A4679F00140C6A /* AppDelegate.m in Sources */,
 				79A256FF18A4FE8100140C6A /* NSColor+HSVExtras.m in Sources */,
 				79A256D218A4679F00140C6A /* main.m in Sources */,
-				79A256FC18A467FE00140C6A /* MMPieChart.m in Sources */,
+				79A256FC18A467FE00140C6A /* MMPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

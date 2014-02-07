@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MMPieChart.h"
+#import "MMPieChartView.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate,MMPieChartDataSource,MMPieChartDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate,MMPieChartViewDataSource,MMPieChartViewDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 

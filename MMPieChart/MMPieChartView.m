@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Manuel de la Mata Sáez. All rights reserved.
 //
 
-#import "MMPieChart.h"
+#import "MMPieChartView.h"
 #import "NSColor+HSVExtras.h"
 
 #define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
 #define ARC4RANDOM_MAX      0x100000000
 
-@interface MMPieChart ()
+@interface MMPieChartView ()
 
 @property (nonatomic, strong) NSMutableArray *keysArray;
 @property (nonatomic, strong) NSMutableArray *valuesArray;
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation MMPieChart
+@implementation MMPieChartView
 
 const CGRect frameRect = {{0.0f,0.0f},{512.0f,512.0f}};
 const CGPoint center = {256.0f,256.0f};
@@ -126,9 +126,9 @@ const int radius = 170;
         NSString *textContent;
         NSString *valueKeyString = self.showKeys?[NSString stringWithFormat:@"%@\n",self.keysArray[i]]:@"";
         
-        if (self.visualizationType == MMPieChartVisualizationTypePorcentage) {
+        if (self.visualizationType == MMPieChartViewVisualizationTypePorcentage) {
             textContent = [NSString stringWithFormat:@"%@%.01lf%%",valueKeyString,[self.relativeValuesArray[i] floatValue]*100];
-        }else if (self.visualizationType == MMPieChartVisualizationTypeUnits) {
+        }else if (self.visualizationType == MMPieChartViewVisualizationTypeUnits) {
             textContent = [NSString stringWithFormat:@"%@%@",valueKeyString,self.valuesArray[i]];
         }
         
@@ -166,7 +166,7 @@ const int radius = 170;
  
     self.lineWidth = 0.5;
     self.lineColor = [NSColor blackColor];
-    self.visualizationType = MMPieChartVisualizationTypeUnits;
+    self.visualizationType = MMPieChartViewVisualizationTypeUnits;
     self.showKeys = YES;
 }
 
@@ -194,48 +194,48 @@ const int radius = 170;
 -(void)reloadData{
     
     //number of portions
-    if (self.dataSource && [self.dataSource respondsToSelector:@selector(numberOfPiecesForPieChart:)]) {
-        self.count = [self.dataSource numberOfPiecesForPieChart:self];
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(numberOfPiecesForPieChartView:)]) {
+        self.count = [self.dataSource numberOfPiecesForPieChartView:self];
     }else{
         self.count = 0;
-        NSLog(@">> MMPieChart. You have no implemented the numberOfPiecesForPieChart: method.");
+        NSLog(@">> MMPieChartView. You have no implemented the numberOfPiecesForPieChartView: method.");
     }
 
     //values
     self.valuesArray = [@[] mutableCopy];
-    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pieChart:valueForValueAtIndex:)]) {
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pieChartView:valueForValueAtIndex:)]) {
         
         for (NSInteger i=0; i<self.count; i++) {
-            [self.valuesArray addObject:[self.dataSource pieChart:self valueForValueAtIndex:i]];
+            [self.valuesArray addObject:[self.dataSource pieChartView:self valueForValueAtIndex:i]];
         }
   
     }else{
-        NSLog(@">> MMPieChart. You have no implemented the pieChart:valueForValueAtIndex: method.");
+        NSLog(@">> MMPieChartView. You have no implemented the pieChartView:valueForValueAtIndex: method.");
     }
     
     //keys
     self.keysArray = [@[] mutableCopy];
-    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pieChart:keyForValueAtIndex:)]) {
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pieChartView:keyForValueAtIndex:)]) {
         
         for (NSInteger i=0; i<self.count; i++) {
-            [self.keysArray addObject:[self.dataSource pieChart:self keyForValueAtIndex:i]];
+            [self.keysArray addObject:[self.dataSource pieChartView:self keyForValueAtIndex:i]];
         }
         
     }else{
-        NSLog(@">> MMPieChart. You have no implemented the pieChart:keyForValueAtIndex: method.");
+        NSLog(@">> MMPieChartView. You have no implemented the pieChartView:keyForValueAtIndex: method.");
         self.showKeys = NO;
     }
   
     //keys
     self.colorsArray = [@[] mutableCopy];
-    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pieChart:colorForValueAtIndex:)]) {
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pieChartView:colorForValueAtIndex:)]) {
         
         for (NSInteger i=0; i<self.count; i++) {
-            [self.colorsArray addObject:[self.dataSource pieChart:self colorForValueAtIndex:i]];
+            [self.colorsArray addObject:[self.dataSource pieChartView:self colorForValueAtIndex:i]];
         }
         
     }else{
-        NSLog(@">> MMPieChart. You have no implemented the pieChart:colorForValueAtIndex: method. Colors will be random");
+        NSLog(@">> MMPieChartView. You have no implemented the pieChartView:colorForValueAtIndex: method. Colors will be random");
         
         for (NSInteger i=0; i<self.count; i++) {
             float randomR = ((float)arc4random() / ARC4RANDOM_MAX);

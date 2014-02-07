@@ -404,7 +404,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="472" height="351"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="oZt-Lc-G94" customClass="MMPieChart">
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="oZt-Lc-G94" customClass="MMPieChartView">
                         <rect key="frame" x="0.0" y="0.0" width="472" height="351"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>

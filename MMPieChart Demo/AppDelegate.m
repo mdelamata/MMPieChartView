@@ -10,7 +10,8 @@
 
 @interface AppDelegate ()
 -(void)configurePieChart;
-@property (weak) IBOutlet MMPieChart *pieChart;
+
+@property (strong) IBOutlet MMPieChartView *pieChart;
 
 @property (strong) NSArray *keysArray;
 @property (strong) NSArray *valuesArray;
@@ -27,7 +28,7 @@
 }
 
 -(void)configurePieChart{
-    
+        
     self.keysArray = @[@"Value 0",@"Value 1",@"Value 2",@"Value 3"];
     self.valuesArray = @[@10,@30,@50,@20];
     self.colorsArray = @[[NSColor redColor],
@@ -38,24 +39,25 @@
 
     [self.pieChart setDelegate:self];
     [self.pieChart setDataSource:self];
+
     [self.pieChart reloadData];
 }
 
 #pragma mark - MMPieChartDataSource Methods
 
--(NSInteger)numberOfPiecesForPieChart:(MMPieChart *)pieChart{
+-(NSInteger)numberOfPiecesForPieChartView:(MMPieChartView *)pieChart{
     return [self.valuesArray count];
 }
 
--(NSColor *)pieChart:(MMPieChart *)pieChart colorForValueAtIndex:(NSInteger)index{
+-(NSColor *)pieChartView:(MMPieChartView *)pieChart colorForValueAtIndex:(NSInteger)index{
     return [self.colorsArray objectAtIndex:index];
 }
 
--(NSNumber *)pieChart:(MMPieChart *)pieChart valueForValueAtIndex:(NSInteger)index{
+-(NSNumber *)pieChartView:(MMPieChartView *)pieChart valueForValueAtIndex:(NSInteger)index{
     return [self.valuesArray objectAtIndex:index];
 }
 
--(NSString *)pieChart:(MMPieChart *)pieChart keyForValueAtIndex:(NSInteger)index{
+-(NSString *)pieChartView:(MMPieChartView *)pieChart keyForValueAtIndex:(NSInteger)index{
     return [self.keysArray objectAtIndex:index];
 }
 
@@ -68,10 +70,10 @@
 
 - (IBAction)toogleVisualizationType:(id)sender {
     
-    if (self.pieChart.visualizationType == MMPieChartVisualizationTypePorcentage) {
-        [self.pieChart setVisualizationType:MMPieChartVisualizationTypeUnits];
+    if (self.pieChart.visualizationType == MMPieChartViewVisualizationTypePorcentage) {
+        [self.pieChart setVisualizationType:MMPieChartViewVisualizationTypeUnits];
     }else{
-        [self.pieChart setVisualizationType:MMPieChartVisualizationTypePorcentage];
+        [self.pieChart setVisualizationType:MMPieChartViewVisualizationTypePorcentage];
         
     }
     
