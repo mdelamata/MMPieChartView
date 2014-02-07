@@ -78,7 +78,7 @@ MMPieChartView provides a protocol called MMPieChartViewDelegate with the follow
    
    
    
-Customizing MMPieChartView
+More options MMPieChartView
 ------------
 
 You can visualize the values in % or in absolute value by changing the property `MMPieChartViewVisualizationType visualizationType`, which can have the following values:
