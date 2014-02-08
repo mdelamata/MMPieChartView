@@ -51,16 +51,8 @@ const int radius = 170;
     // Drawing code here.
     [super drawRect:dirtyRect];
 
-    NSImage *image = [[NSImage alloc] initWithSize:NSSizeFromCGSize(frameRect.size)];
-    [image lockFocus];
-
     [self drawChartPieces];
     [self drawString];
-    
-    [image unlockFocus];
-    [image drawInRect:dirtyRect];
-    [[NSApplication sharedApplication] setApplicationIconImage:image];
-    
 }
 
 -(void)drawChartPieces{
