@@ -27,7 +27,7 @@ Set the delegates and datasource
 
 Declare the sources:
 
-    self.keysArray = @[@"Value 0",@"Value 1",@"Value 2",@"Value 3"];
+    self.keysArray = @[@"aCorn",@"iPaganini",@"Solfa",@"The Kings Cup"];
     self.valuesArray = @[@10,@30,@50,@20];
     self.colorsArray = @[[NSColor redColor],
                          [NSColor orangeColor],
