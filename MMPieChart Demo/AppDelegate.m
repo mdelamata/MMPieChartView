@@ -42,6 +42,7 @@
     [self.pieChart setDelegate:self];
     [self.pieChart setDataSource:self];
 
+    self.pieChart.radius = 200;
     [self.pieChart reloadData];
 }
 

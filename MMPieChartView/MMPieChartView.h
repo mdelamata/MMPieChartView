@@ -38,6 +38,7 @@ typedef enum MMPieChartViewVisualizationType{
 @property (nonatomic, assign) IBOutlet id<MMPieChartViewDelegate> delegate;         //delegate
 @property (nonatomic, assign) IBOutlet id<MMPieChartViewDataSource> dataSource;     //datasource
 
+@property (nonatomic, assign) CGFloat radius;
 @property (nonatomic, assign) CGFloat lineWidth;                                //border line width of each piece
 @property (nonatomic, assign) NSColor *lineColor;                               //border line color of each piece
 @property (nonatomic, assign) MMPieChartViewVisualizationType visualizationType;    //Percentage or absolute value

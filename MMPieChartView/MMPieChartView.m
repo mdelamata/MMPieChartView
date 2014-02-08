@@ -20,15 +20,15 @@
 @property (nonatomic, strong) NSMutableArray *colorsArray;
 @property (nonatomic, assign) NSInteger count;
 
+@property (nonatomic, assign) NSRect frameRect;
+@property (nonatomic, assign) CGPoint center;
+
 -(void)setDefaults;
 
 @end
 
 @implementation MMPieChartView
 
-const CGRect frameRect = {{0.0f,0.0f},{512.0f,512.0f}};
-const CGPoint center = {256.0f,256.0f};
-const int radius = 170;
 
 
 - (id)initWithFrame:(NSRect)frame
@@ -85,9 +85,9 @@ const int radius = 170;
         
         
         NSBezierPath *path = [[NSBezierPath alloc] init];
-        [path moveToPoint: center];
-        [path appendBezierPathWithArcWithCenter:center radius:radius startAngle:lastAngle endAngle:nextAngle clockwise:YES];
-        [path lineToPoint:center];
+        [path moveToPoint: self.center];
+        [path appendBezierPathWithArcWithCenter:self.center radius:self.radius startAngle:lastAngle endAngle:nextAngle clockwise:YES];
+        [path lineToPoint:self.center];
         [path closePath];
         
         [gradient drawInBezierPath: path angle: -90];
@@ -127,9 +127,9 @@ const int radius = 170;
         
         //// Text Drawing
         CGFloat alpha = ((lastAngle-nextAngle)/2.0)+nextAngle;
-        CGFloat newRadious = radius*(self.showKeys?0.6:0.7);
-        CGFloat x = center.x + (newRadious)*cos(DEGREES_TO_RADIANS(alpha));
-        CGFloat y = center.y + (newRadious)*sin(DEGREES_TO_RADIANS(alpha));
+        CGFloat newRadious = self.radius*(self.showKeys?0.6:0.7);
+        CGFloat x = self.center.x + (newRadious)*cos(DEGREES_TO_RADIANS(alpha));
+        CGFloat y = self.center.y + (newRadious)*sin(DEGREES_TO_RADIANS(alpha));
         CGFloat width = self.showKeys?120:70;
         CGFloat height = self.showKeys?80:40;
         
@@ -160,9 +160,16 @@ const int radius = 170;
     self.lineColor = [NSColor blackColor];
     self.visualizationType = MMPieChartViewVisualizationTypeUnits;
     self.showKeys = YES;
+    
+    self.radius = 100;
+    self.frameRect = self.bounds;
+    self.center = CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2);
 }
 
 -(void)updateData{
+    
+    self.frameRect = self.bounds;
+    self.center = CGPointMake(CGRectGetWidth(self.bounds)/2, CGRectGetHeight(self.bounds)/2);
     
     double total = 0;
     for (NSNumber *value in self.valuesArray) {
