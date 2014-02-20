@@ -1,6 +1,8 @@
 MMPieChartView
 ============
 
+[![Build Status](https://travis-ci.org/mdelamata/MMPieChartView.png?branch=master)](https://travis-ci.org/mdelamata/MMPieChartView)
+
 MMPieChartView is a subclass of NSView to represent a circular chart divided into sectors, illustrating numerical proportion.
 
 ![alt tag](https://raw.github.com/mdelamata/MMPieChartView/master/MMPieChart%20Demo/capture.png)
